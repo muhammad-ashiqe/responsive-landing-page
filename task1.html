@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobiles hub</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00093c;
+            padding: 10px 100px;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        .navbar a:hover{
+            color: red;
+        }
+        .products {
+            display: grid;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 14px;
+        }
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (min-width: 1200px) {
+            .products {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .products {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+            .navbar a{
+              display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Mobile Hub</h1>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+
+    <div class="products">
+        <div class="card">
+            <img src="https://darlingretail.com/cdn/shop/products/1_7b64958c-304b-43bd-b759-c5366bfa9914_600x.jpg?v=1661581431" alt="Product Image">
+            <h3>Product 1</h3>
+            <p>$10.00</p>
+        </div>
+        <div class="card">
+            <img src="https://darlingretail.com/cdn/shop/products/r1595_Starlight_PDP_Image_Position-1A_Avail__en-IN_600x.jpg?v=1663052240" alt="Product Image">
+            <h3>Product 2</h3>
+            <p>$20.00</p>
+        </div>
+        <div class="card">
+            <img src="https://suprememobiles.in/cdn/shop/files/mobiles.jpg?crop=center&height=2048&v=1664280076&width=2048" alt="Product Image">
+            <h3>Product 3</h3>
+            <p>$30.00</p>
+        </div>
+        <div class="card">
+            <img src="https://assets.nikshanonline.com/wp-content/uploads/2023/08/Realme-11-Pro-5G-256-GB-12-GB-RAM-3.png" alt="Product Image">
+            <h3>Product 4</h3>
+            <p>$40.00</p>
+        </div>
+        <div class="card">
+            <img src="https://media.croma.com/image/upload/v1708674418/Croma%20Assets/Communication/Mobiles/Images/301883_0_e7hjaj.png" alt="Product Image">
+            <h3>Product 5</h3>
+            <p>$50.00</p>
+        </div>
+        <div class="card">
+            <img src="https://image01.realme.net/general/20230608/1686196034266e84391de43944a599cdec535212ef4f6.png?width=1440&height=1440&size=710277" alt="Product Image">
+            <h3>Product 6</h3>
+            <p>$60.00</p>
+        </div>
+        <div class="card">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/9/l/3/-original-imaghgcktmwxthzc.jpeg?q=90&crop=false" alt="Product Image">
+            <h3>Product 7</h3>
+            <p>$70.00</p>
+        </div>
+        <div class="card">
+            <img src="https://image01.realme.net/general/20241112/17313948173174aaed907bb0a41258452468fb829cc4c.png?width=1080&height=1080&size=799895" alt="Product Image">
+            <h3>Product 8</h3>
+            <p>$80.00</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Responsive Products Page. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
